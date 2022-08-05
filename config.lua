@@ -52,10 +52,10 @@ yvim.project.base_dirs = {
 
 -- Snippet
 yvim.snippet.user_snippet_dirs = {
-  {
-    path.join_paths(path.get_config_dir(), "snippets"),
-    loader = "snipmate",
-  },
+	{
+		path.join_paths(path.get_config_dir(), "snippets"),
+		loader = "lua",
+	},
 }
 
 -- UI
