@@ -64,3 +64,11 @@ yvim.ui.font = {
   size = 16.5,
   forcedly_assign = true,
 }
+
+-- Custom keymaps
+yvim.keymaps.n = {
+    ["<M-Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Go to previous buffer" },
+    ["<M-Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Go to next buffer" },
+    ["<M-S-Left>"] = { "<Cmd>BufferLineMovePrev<CR>", "Move the current buffer backwards" },
+    ["<M-S-Right>"] = { "<Cmd>BufferLineMoveNext<CR>", "Move the current buffer forwards" },
+}
