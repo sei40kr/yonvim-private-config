@@ -54,7 +54,7 @@ yvim.project.base_dirs = {
 yvim.snippet.user_snippet_dirs = {
   {
     path.join_paths(path.get_config_dir(), "snippets"),
-    loader = "vscode",
+    loader = "snipmate",
   },
 }
 
