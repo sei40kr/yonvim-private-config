@@ -1,22 +1,20 @@
-local null_ls = require("null-ls")
 local path = require("yvim.util.path")
 
 -- Core
-yvim.null_ls.sources = {
-  null_ls.builtins.diagnostics.actionlint,
-  null_ls.builtins.diagnostics.editorconfig_checker,
-  null_ls.builtins.diagnostics.gitcommit,
-  null_ls.builtins.diagnostics.textlint,
-  null_ls.builtins.diagnostics.zsh,
-  null_ls.builtins.formatting.nixpkgs_fmt,
-  null_ls.builtins.formatting.prettier,
-  null_ls.builtins.formatting.prettier_d_slim,
-  null_ls.builtins.formatting.shfmt,
-  null_ls.builtins.formatting.stylua
-}
-
--- Completion
-yvim.completion.show_menu_border = true
+yvim.null_ls.sources = function(null_ls)
+  return {
+    null_ls.builtins.diagnostics.actionlint,
+    null_ls.builtins.diagnostics.editorconfig_checker,
+    null_ls.builtins.diagnostics.gitcommit,
+    null_ls.builtins.diagnostics.textlint,
+    null_ls.builtins.diagnostics.zsh,
+    null_ls.builtins.formatting.nixpkgs_fmt,
+    null_ls.builtins.formatting.prettier,
+    null_ls.builtins.formatting.prettier_d_slim,
+    null_ls.builtins.formatting.shfmt,
+    null_ls.builtins.formatting.stylua
+  }
+end
 
 -- Format
 yvim.format.format_on_save = true
