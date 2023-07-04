@@ -1,5 +1,3 @@
-local path = require("yvim.util.path")
-
 -- Core
 yvim.null_ls.sources = function(null_ls)
   return {
@@ -53,7 +51,7 @@ yvim.project.base_dirs = {
 -- Snippet
 yvim.snippet.user_snippet_dirs = {
 	{
-		path.join_paths(path.get_config_dir(), "snippets"),
+		vim.fn.stdpath("config") .. "/snippets",
 		loader = "lua",
 	},
 }
