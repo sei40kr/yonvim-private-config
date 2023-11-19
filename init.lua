@@ -17,6 +17,14 @@ require("yvim").setup({
     end,
   },
 
+  -- Completion
+  completion = {
+    copilot = {
+      enable = true,
+      filetypes = {},
+    },
+  },
+
   -- Format
   format = { format_on_save = true },
 
