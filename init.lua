@@ -73,7 +73,8 @@ require("yvim").setup({
   -- Project
   project = {
     base_dirs = {
-      { "~/ghq", max_depth = 4 },
+      { "/etc/dotfiles", max_depth = 0 },
+      { "~/ghq",         max_depth = 4 },
     }
   },
 
