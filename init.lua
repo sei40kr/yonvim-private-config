@@ -38,7 +38,14 @@ require("yvim").setup({
       hls = {},
       html = {},
       jsonls = {},
-      lua_ls = {},
+      lua_ls = {
+        settings = {
+          Lua = {
+            completion = { callSnippet = "Replace" },
+            hint = { enable = true },
+          },
+        },
+      },
       metals = {},
       nil_ls = {
         settings = {
