@@ -25,9 +25,6 @@ require("yvim").setup({
     },
   },
 
-  -- Format
-  format = { format_on_save = true },
-
   -- LSP
   lsp = {
     servers = {
