@@ -1,3 +1,5 @@
+vim.opt.undofile = true
+
 -- Core
 require("yvim").setup({
   null_ls = {
