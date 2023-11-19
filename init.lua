@@ -33,6 +33,7 @@ require("yvim").setup({
       hls = {},
       html = {},
       jsonls = {},
+      lua_ls = {},
       metals = {},
       ocamllsp = {},
       pylsp = {},
