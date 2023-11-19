@@ -40,6 +40,15 @@ require("yvim").setup({
       jsonls = {},
       lua_ls = {},
       metals = {},
+      nil_ls = {
+        settings = {
+          ["nil"] = {
+            formatting = {
+              command = { "nixpkgs-fmt" },
+            },
+          }
+        },
+      },
       ocamllsp = {},
       pylsp = {},
       r_language_server = {},
