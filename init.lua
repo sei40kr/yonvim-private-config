@@ -1,3 +1,4 @@
+vim.opt.tabstop = 4
 vim.opt.undofile = true
 
 -- Core
