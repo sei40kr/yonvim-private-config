@@ -96,6 +96,8 @@ require("yvim").setup({
 
   -- Custom keymaps
   keymaps = {
+    { "<lt>",        "<lt>gv",                       mode = "v" },
+    { ">",           ">gv",                          mode = "v" },
     { "<M-Left>",    "<Cmd>BufferLineCyclePrev<CR>", desc = "Go to previous buffer" },
     { "<M-Right>",   "<Cmd>BufferLineCycleNext<CR>", desc = "Go to next buffer" },
     { "<M-S-Left>",  "<Cmd>BufferLineMovePrev<CR>",  desc = "Move the current buffer backwards" },
