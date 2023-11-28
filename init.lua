@@ -12,8 +12,26 @@ require("yvim").setup({
         null_ls.builtins.diagnostics.textlint,
         null_ls.builtins.diagnostics.zsh,
         null_ls.builtins.formatting.nixpkgs_fmt,
-        null_ls.builtins.formatting.prettier,
-        null_ls.builtins.formatting.prettier_d_slim,
+        null_ls.builtins.formatting.prettier.with({
+          disabled_filetypes = {
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "json",
+            "jsonc",
+          }
+        }),
+        null_ls.builtins.formatting.prettier_d_slim.with({
+          disabled_filetypes = {
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "json",
+            "jsonc",
+          }
+        }),
         null_ls.builtins.formatting.shfmt,
         null_ls.builtins.formatting.stylua,
       }
@@ -33,10 +51,10 @@ require("yvim").setup({
     servers = {
       ansiblels = {},
       bashls = {},
+      biome = {},
       clangd = {},
       cssls = {},
       emmet_ls = {},
-      eslint = {},
       gopls = {},
       hls = {},
       html = {},
