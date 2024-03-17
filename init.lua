@@ -50,6 +50,12 @@ require("yvim").setup({
     },
   },
 
+  lang = {
+    typescript = {
+      enable = true,
+    },
+  },
+
   -- LSP
   lsp = {
     servers = {
@@ -88,7 +94,6 @@ require("yvim").setup({
       sourcekit = {},
       tailwindcss = {},
       terraformls = {},
-      tsserver = {},
       vuels = {},
       yamlls = {},
     },
