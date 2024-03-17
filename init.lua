@@ -11,6 +11,10 @@ require("yvim").setup({
         null_ls.builtins.diagnostics.gitcommit,
         null_ls.builtins.diagnostics.textlint,
         null_ls.builtins.diagnostics.zsh,
+        -- NOTE: Biome can be also used as a LSP server, but it requires
+        --  dynamic registration of capabilities which is supported in
+        --  Neovim 0.10.
+        null_ls.builtins.formatting.biome,
         null_ls.builtins.formatting.nixpkgs_fmt,
         null_ls.builtins.formatting.prettier.with({
           disabled_filetypes = {
@@ -51,7 +55,6 @@ require("yvim").setup({
     servers = {
       ansiblels = {},
       bashls = {},
-      biome = {},
       clangd = {},
       cssls = {},
       emmet_ls = {},
