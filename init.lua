@@ -63,7 +63,15 @@ require("yvim").setup({
       bashls = {},
       clangd = {},
       cssls = {},
-      emmet_ls = {},
+      emmet_language_server = {
+        init_options = {
+          preferences = {
+            ["css.color.case"] = "lower",
+            ["css.floatUnit"] = "rem",
+          },
+          showSuggestionsAsSnippets = true,
+        },
+      },
       gopls = {},
       hls = {},
       html = {},
